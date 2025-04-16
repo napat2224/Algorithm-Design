@@ -8,6 +8,7 @@
 5. [Chap 5: Dynamic Programming](#dynamic-programming)
 6. [Chap 6: Graph](#graph)
 7. [Chap 7: Shortest Path](#shortest-path)
+8. [Chap 8: State Space Search](#state-space-search)
 7. [Chap G: Greedy Algorithm](#greedy-algorithm)
 
 # Intro
@@ -70,7 +71,7 @@ what is constraints?????
         - n = x+y ; a^n mod k =?
         = (a^x mod k * a^y mod k) mod k
 5. **Maximum Subarray Sum** 
-    - [ex max](ex01e2.cpp)
+    - [ex max](grader/ex01e2.cpp)
 6. **Strassen's Matrix Multiplication**
     - 
 
@@ -78,11 +79,11 @@ what is constraints?????
     - Divide & Conquer + Lookup Table
     - for divide & conquer the subproblem overlap, so we use dynamic programming
 1. **Fibonacci Number**
-    - [ex fibo](ex02e1_fibo.cpp)
+    - [ex fibo](grader/ex02e1_fibo.cpp)
     - **Top-Down** - use divide and conquer
     - **Bottom-up** - add the table till wanted cell, don't have to be recursive
 2. **Binomial Coefficient**
-    - [ex: bino](ex02e2_cnk.cpp)
+    - [ex: bino](grader/ex02e2_cnk.cpp)
     - choose r things from n things
     - C<sub>n,r</sub> = C<sub>n-1,r</sub> + C<sub>n-1,r-1</sub>
     - bottom-up use pascal triangle
@@ -91,19 +92,15 @@ what is constraints?????
     - instead for divide into n/2,n/2 , divide into n-1,1
 4. **Matrix Chain Multiplication**
     - best group to multiply
-    - <img src="image.png" width = "500">
-    - [ex: mcm](ex03e2_mcm.cpp)
+    - <img src="ImgForMD/image.png" width = "500">
+    - [ex: mcm](grader/ex03e2_mcm.cpp)
 5. **Knapsack**
-    - [ex: 01-Knap](a60a_midp1_knapsack.cpp)
+    - [ex: 01-Knap](grader/a60a_midp1_knapsack.cpp)
 6. **Coin Change**
     <!-- !!ไปดู -->
 7. **Longest Common Subsequence**
     <!-- !ยังไม่ได้ทำ bottom up -->
-    - [ex: LCS](ex03e1_lcs.cpp)
-
-
-# Greedy Algorithm
-    - works correctly on just some problem
+    - [ex: LCS](grader/ex03e1_lcs.cpp)
 
 
 # Graph
@@ -122,7 +119,7 @@ what is constraints?????
         - sparce (e~n)
     - Incidence matrix
         - rows -> nodes, columns->edges (1 when node in edge connect)
-    - <img src="image-2.png" width = "600">
+    - <img src="ImgForMD/image-2.png" width = "600">
 - **Depth First Search**
     - what
 - **Breath First Search**
@@ -150,3 +147,21 @@ what is constraints?????
 - **Floyd-Warshall**
     - for all pair shortest path
     
+# State Space Search
+- Next level brute force
+    - which order should we enumerate the member (<ins>BFS</ins> and <ins>DFS</ins> topic)
+    - Can we reduce the size of the search space (<ins>Backtracking</ins> and <ins>Branch-and-Bound</ins>)
+- **8-queen**
+    - queens' place that they cannot capture each other
+- **DFS ans BFS** 
+- **Triple and Half**
+    - *3 / 2
+    - infinite space -> BFS
+- **Backtracing**
+    - we should not generate states that will never be the solution
+- **Branch-and-Bound**
+    - Backtracking for COP(constraint optimization problem - find best)
+    - uses a bounding heuristic 
+        - can overestimate but don't underestimate
+# Greedy Algorithm
+    - works correctly on just some problem
