@@ -121,9 +121,9 @@ what is constraints?????
         - rows -> nodes, columns->edges (1 when node in edge connect)
     - <img src="ImgForMD/image-2.png" width = "600">
 - **Depth First Search**
-    - what
+    - use stact
 - **Breath First Search**
-    - what
+    - use queue
 - **Topo Sort**
     - use inner degree
 - **Mininum Spaning Tree**
@@ -163,5 +163,9 @@ what is constraints?????
     - Backtracking for COP(constraint optimization problem - find best)
     - uses a bounding heuristic 
         - can overestimate but don't underestimate
+- **Least Cost Search** aka. **Best First Search**
+    - try to find good solution asap so that B&B can benefit on this
+    - use priority queue of heuristic
+
 # Greedy Algorithm
     - works correctly on just some problem
