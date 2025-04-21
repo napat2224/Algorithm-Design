@@ -153,6 +153,7 @@ what is constraints?????
     - Can we reduce the size of the search space (<ins>Backtracking</ins> and <ins>Branch-and-Bound</ins>)
 - **8-queen**
     - queens' place that they cannot capture each other
+    - [n-queen](grader/ex07e1_nqueen.cpp)
 - **DFS ans BFS** 
 - **Triple and Half**
     - *3 / 2
@@ -163,9 +164,17 @@ what is constraints?????
     - Backtracking for COP(constraint optimization problem - find best)
     - uses a bounding heuristic 
         - can overestimate but don't underestimate
+    - [0/1 Knapsac with Real Number](grader/ex07m1_​knapsack.cpp)
 - **Least Cost Search** aka. **Best First Search**
     - try to find good solution asap so that B&B can benefit on this
     - use priority queue of heuristic
+    - [15 Puzzle](grader/ex07m2_15puzzle.cpp)
 
 # Greedy Algorithm
-    - works correctly on just some problem
+- works correctly on just some problem
+- **Rational Knapsack**
+    - take the best price/weight ratio first
+    - O(nlongn) from sorting 
+- **Activity Selection**
+    - *N* jobs, each scheduled to *start* and *stop*, must pick as many as possible jobs that no time conflict
+    - sort by stop time first
