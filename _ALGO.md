@@ -175,7 +175,14 @@ what is constraints?????
 - **Rational Knapsack**
     - take the best price/weight ratio first
     - O(nlongn) from sorting 
+    - [Fractional Knapsack](grader/ex04e2_fknapsack.cpp)
 - **Activity Selection**
     - *N* jobs, each scheduled to *start* and *stop*, must pick as many as possible jobs that no time conflict
     - sort by stop time first
     - [Interval Selection](grader/ex04e1_interval.cpp)
+note:
+```cpp
+#include <iomanip>
+cout << fixed << setprecision(4) << maxV;
+// ! if not fully correct try double and don't caculate useing float if not nessesary
+```
