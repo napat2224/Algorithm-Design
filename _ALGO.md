@@ -186,3 +186,39 @@ note:
 cout << fixed << setprecision(4) << maxV;
 // ! if not fully correct try double and don't caculate useing float if not nessesary
 ```
+
+# NP-Complete
+- is that problem hard for computer? -> use a lot of resources and time
+- what is easy?
+    - can solve wihtin O(T(n)) where T(n) is polynomial
+- Unsolvable
+    - called undecidable problem
+    - ex. Halting Problem
+- P: Easy rpblem
+- NP: Most problems we really cared
+- NP-Hard: Very hard
+- NP-Complete: Special class of problem, very important. We believe that it is hard, but we don't really know
+- **Decision Problem**
+    - Yes/No problem
+- **Function Problem**
+    - output not just Yes/No
+    - We don't talk about in this unit, because all Function problems can be solve by dicision problem
+
+### Comparing Hardness
+- revolves around **reducibility**
+    - solve problem A by transform in to problem B (instance)
+    - A can reduce to B when every instance of A can be *easily transform* in to instances of B, and solution of instance of A can be *calculated easily* form solution of those instance B
+        - **easily mean in polynomial time**
+- A can transform to B -> A is not harder than B (A can be solve by resource of B)
+
+### Complexity Class
+- P and NP
+    - **P**
+        - set of problems that we have **polynomial time** or better
+    - **NP**
+        - **polynomially verifiable** (not finding, can check the result in polynomial)
+        - or **non-determisnistically provable** in polynomial time
+    - P is subset of NP
+    - ex:
+        - p: MSS, Sorting, Shortest Path, MST
+        - NP: P, TSP, Knapsach, graph coloring, longest path, ...
